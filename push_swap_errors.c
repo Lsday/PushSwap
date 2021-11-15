@@ -6,7 +6,7 @@
 /*   By: oronda <oronda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 16:16:39 by oronda            #+#    #+#             */
-/*   Updated: 2021/11/08 16:41:21 by oronda           ###   ########.fr       */
+/*   Updated: 2021/11/15 18:16:53 by oronda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,16 @@ int	print_error(void)
 int	is_input_valid(char *str)
 {
 	long	nb;
+	int		i;
 
+	i = 0;
+	while (str[i++])
+		;
+	if (i > 12)
+		return (0);
 	nb = ft_atol(str);
+	if (nb > INT_MAX)
+		return (0);
 	while (*str)
 	{
 		if (!ft_isdigit(*str))

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap_utils.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: oronda <oronda@student.42nice.fr>          +#+  +:+       +#+        */
+/*   By: oronda <oronda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 11:45:36 by oronda            #+#    #+#             */
-/*   Updated: 2021/11/06 10:06:26 by oronda           ###   ########.fr       */
+/*   Updated: 2021/11/15 18:00:42 by oronda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void	shrink_up(t_stack *stack)
 	int	i;
 
 	i = 0;
-	while (i < stack->count)
+	while (i < stack->count - 1)
 	{
 		stack->elems[i] = stack->elems[i + 1];
 		i++;
@@ -43,7 +43,7 @@ void	grow_down(t_stack *stack)
 		return ;
 	stack->count++;
 	i = 0;
-	while (i < stack->count)
+	while (i < stack->count - 1)
 	{
 		stack->elems[stack->count - 1 - i] = stack->elems[stack->count - i - 2];
 		i++;
