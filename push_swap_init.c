@@ -6,7 +6,7 @@
 /*   By: oronda <oronda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 13:53:33 by oronda            #+#    #+#             */
-/*   Updated: 2021/11/08 14:46:56 by oronda           ###   ########.fr       */
+/*   Updated: 2021/11/08 21:31:20 by oronda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 int	init_stack(t_stacks *stacks, int capacity)
 {
-	stacks->stack_a.elems = (int *)malloc(sizeof(int *) * capacity);
-	stacks->stack_b.elems = (int *)malloc(sizeof(int *) * capacity);
+	stacks->stack_a.elems = (int *)malloc(sizeof(int) * capacity);
+	stacks->stack_b.elems = (int *)malloc(sizeof(int) * capacity);
 	if (!stacks->stack_b.elems)
 		return (0);
 	stacks->stack_a.capacity = capacity;

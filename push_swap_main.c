@@ -6,7 +6,7 @@
 /*   By: oronda <oronda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 09:16:15 by oronda            #+#    #+#             */
-/*   Updated: 2021/11/08 16:23:23 by oronda           ###   ########.fr       */
+/*   Updated: 2021/11/15 13:52:27 by oronda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,7 +69,7 @@ void	solve(t_stacks *stacks, int count)
 	}
 	else if (count == 3)
 		solve3_a(stacks);
-	else if (count > 3 && count <= 5 )
+	else if (count > 3 && count <= 5)
 		solve_5(stacks);
 	else if (count > 5 && count < 100)
 		solve_5_500(stacks);

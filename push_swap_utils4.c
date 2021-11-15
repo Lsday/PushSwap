@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap_utils4.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: oronda <oronda@student.42nice.fr>          +#+  +:+       +#+        */
+/*   By: oronda <oronda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/06 10:05:06 by oronda            #+#    #+#             */
-/*   Updated: 2021/11/06 10:11:35 by oronda           ###   ########.fr       */
+/*   Updated: 2021/11/08 22:04:53 by oronda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	scan_from_top(t_stack *stack, t_chunk chunk)
 	int	i;
 
 	i = 0;
-	while (i < (stack->count / 2) + 1)
+	while (i < ((stack->count + 1) / 2))
 	{
 		if (stack->elems[i] >= chunk.range_min
 			&& stack->elems[i] <= chunk.range_max)
